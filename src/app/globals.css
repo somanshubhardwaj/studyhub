@@ -2,21 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-.studyimage{
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #F1FAFF
+  ;
+
+}
+.studyimage {
   height: 400px;
 }
-.subimg{
+.subimg {
   height: 175px;
 }
-.subject{
+.subject {
   border: 1px solid black;
   border-radius: 10px;
   padding: 6px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #ffffff;
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
 }
-.subtitle{
+@media screen and (max-width: 768px) {
+  .content-section {
+    width: 100%;
+  }
+  .img-section {
+    width: 100%;
+  }
+  .subjects {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.subtitle {
   font-size: 1.2rem;
   font-weight: bold;
 }
