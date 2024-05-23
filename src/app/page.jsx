@@ -3,13 +3,11 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 export default function Home() {
   const subject = [
-    { name: "HS-103", img: "/book.png", link: "" },
-    { name: "HS-101", img: "/book.png", link: "" },
-    { name: "HS-102", img: "/book.png", link: "" },
-    { name: "HS-104", img: "/book.png", link: "" },
-    { name: "HS-105", img: "/book.png", link: "" },
-    { name: "HS-106", img: "/book.png", link: "" },
-    { name: "HS-107", img: "/book.png", link: "" },
+    { name: "HS-103", img: "/book.png", link: "https://somanshubhardwaj.notion.site/b06321d17876429db23175e7e53c01a3?v=64e32df24244406b8f939acd82ba43fc" },
+    { name: "HS-101", img: "/book.png", link: "https://somanshubhardwaj.notion.site/c3ce8d922b1941a1b58766834978c15a?v=9dba6120bdc949afa8681372854d9e0f" },
+    { name: "ME-101", img: "/book.png", link: "https://somanshubhardwaj.notion.site/b634684302044adc8f3e9ceee7614b71?v=62a1fc6f604b4245bd96908441a42b2c" },
+    { name: "CS-111", img: "/book.png", link: "https://somanshubhardwaj.notion.site/7362d2e2575942feaa719ab6d1de5c7b?v=1b7c9d7271f14ca8828e7996184957ae" },
+    { name: "CS-121", img: "/book.png", link: "https://somanshubhardwaj.notion.site/INTRODUCTION-TO-PYTHON-AND-DATA-STRUCTURES-b6f05419b8074042a3c0d872c7e25419" },
   ];
   return (
     <div className="p-6">
@@ -17,7 +15,7 @@ export default function Home() {
 
       <section className="">
         <h1 className="mt-6 text-2xl font-bold">1st Year Notes</h1>
-        <div className="subjects flex flex-wrap justify-between ">
+        <div className="subjects flex flex-wrap justify-around ">
           {subject.map((sub) => (
             <a href={sub.link}>
               <div className="subject mt-6">
